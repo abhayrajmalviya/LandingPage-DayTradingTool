@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.main{
+  display:flex;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  background-image: url('./assests/trading.jpg');
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container{
+  width:80%;
+  height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  /* background: aquamarine; */
+  position: relative;
+}
+
+#title{
   color: white;
+  font-size:40px ;
+  font-weight: 400;
+  padding: 20px;
+}
+.download-div{
+  margin-top: 120px;
+  padding: 20px;
+  display:flex;
+  flex-direction: ;
+}
+.download-div > div> h1{
+  font-weight: 500;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.download-div > div> p{
+  font-size: 16px;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.button-container{
+  display: flex;
+  gap: 10px;
+}
+.download-button{
+  padding:15px;
+  background-color: green;
+  background-image: url(./assests/playstore.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  color:white;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  font-size: 20px;
+  margin-top: 20px;
+  width:200px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid green;
+}
+.download-button > img{
+  object-fit: cover;
+}
+.image-container > img{
+  margin-top: -250px;
+  margin-left: 200px;
+}
+.social-media{
+  padding-left: 20px;
+  font-size: 20px;
+  color: green;
+  display: flex;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.working{
+  height: 100vh;
+  /* width:80%; */
+  height: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  /* background: aquamarine; */
+  position: relative;
+}
+.working > h1{
+  padding: 20px;
+  font-size: 48px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  width: 300px;
+  height: 650px;
+  border: 1px solid black;
+  /* padding: 20px; */
+  margin: 20px;
+  border-radius: 20px;
+}
+.card > img{
+  border-radius: 20px;
+  width: 300px;
+  height: 650px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* ======= Media Queries */
+
+@media only screen and (max-width: 1200px) {
+  .image-container{
+    display: none;
+    visibility: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  .download-div > div> h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
